@@ -1,0 +1,266 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+
+/*-------------------------------
+------- General Styling ---------
+-------------------------------*/
+body {
+    background: #fff;
+    color: #424242;
+    font-family: 'Noto Serif', serif;
+}
+
+.site-title,
+.heading__signup--2,
+legend {
+    color: black;
+    font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
+}
+
+.heading__signup--2,
+legend {
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.container {
+    padding: 0 20px;
+    width: 100%;
+    max-width: 768px;
+    margin:0 auto;
+}
+
+/*-------------------------------
+------- Main Styling ---------
+-------------------------------*/
+
+/*--- Header ---*/
+
+header {
+    background: #493251;
+}
+
+.site-title {
+    color: #eee;
+    text-shadow: 0 5px 5px rgba(10,10,10,0.5);
+    text-transform: uppercase; 
+    margin: 0;
+    padding: 20px 0;
+}
+
+/*--- "Call to Action" Section ---*/
+
+.heading {
+    /* Do not use shorthand 'padding' property as it will override the left and right values from .container */
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.heading__signup--2 {
+    margin-top: 0;
+}
+
+.custom-divider__first {
+    margin: 0;
+    border: 2px solid black;
+}
+
+.custom-divider__second {
+    margin-top: 4px;
+    border-color: black;
+}
+
+/*--- Form ---*/
+
+.registration {
+    margin-top:  20px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+.fieldset-divider {
+    margin: 40px 0;
+    border-color: black;
+}
+
+.contact-info__label,
+.netws-opt__header {
+    margin: 20px 0 5px;
+}
+
+.contact-info__input::-webkit-input-placeholder {
+    font-style: italic;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.contact-info__input::-moz-placeholder {
+    font-style: italic;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.contact-info__input:-ms-input-placeholder {
+    font-style: italic;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.contact-info__input::-ms-input-placeholder {
+    font-style: italic;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.contact-info__input::placeholder {
+    font-style: italic;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.contact-info__input#zipcode {
+    max-width: 50%;
+}
+
+.news-opt__header,
+.news-opt__label--textarea {
+    margin: 20px 0 10px;
+}
+
+.news-opt__input,
+.news-opt__label {
+    margin-bottom: 5px;
+}
+
+.news-opt__label {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.news-opt__textarea {
+    height: 100px;
+}
+
+.signup-form__submit {
+    border: none;
+    border-bottom: 3px solid rgba(0,0,0,0.1);
+    background: #0CCE6B;
+    border-radius: 4px;
+    color: white;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 30px 0;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    width: 100%;
+    outline: white
+}
+
+.signup-form__submit:hover {
+    opacity: .8;
+}
+
+.signup-form__submit:active {
+    border-bottom: none;
+    margin-top: 33px;
+}
+
+footer {
+    padding-top: 20px;
+    font-style: italic;
+}
+
+/*-------------------------------
+------- DRY Styling ---------
+-------------------------------*/
+
+.flex, 
+.flex-pair {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.input-box {
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    width: 100%;
+    background: #eee;
+    color: black;
+    padding: 10px 15px;
+    transition: all .5s;
+}
+
+.input-box:focus {
+    background-color: white;
+    outline-color: #f09027;
+}
+
+.input-box:not(textarea) {
+    height: 50px;
+}
+
+/*---------------------------------------------
+------- Media Query: 768px and Larger ---------
+---------------------------------------------*/
+
+@media (min-width: 768px) {
+    
+    .heading {
+        padding-bottom: 40px;
+    }
+    
+    .heading__signup--2 {
+        font-size: 2em;    
+    }
+    
+    .registration {
+        margin-top: 40px;
+    }
+    
+    .flex-pair {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        margin-top: 20px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    
+    .contact-info__input {
+        -ms-flex-preferred-size: 75%;
+            flex-basis: 75%;
+    }
+    
+    .contact-info__label {
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
+        margin: 0;
+    }
+    
+    .contact-info__input#zipcode {
+        max-width: 25%;
+    }
+}
