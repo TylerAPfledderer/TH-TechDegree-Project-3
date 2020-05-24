@@ -55,7 +55,7 @@ header {
     padding: 20px 0;
 }
 
-/*--- "Call to Action" Section ---*/
+/*--- Page Heading Section ---*/
 
 .heading {
     /* Do not use shorthand 'padding' property as it will override the left and right values from .container */
