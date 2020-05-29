@@ -98,31 +98,31 @@ fieldset {
     margin: 20px 0 5px;
 }
 
-.contact-info__input::-webkit-input-placeholder {
+.contact-info__input.required::-webkit-input-placeholder {
     font-style: italic;
     text-align: right;
     padding-right: 10px;
 }
 
-.contact-info__input::-moz-placeholder {
+.contact-info__input.required::-moz-placeholder {
     font-style: italic;
     text-align: right;
     padding-right: 10px;
 }
 
-.contact-info__input:-ms-input-placeholder {
+.contact-info__input.required:-ms-input-placeholder {
     font-style: italic;
     text-align: right;
     padding-right: 10px;
 }
 
-.contact-info__input::-ms-input-placeholder {
+.contact-info__input.required::-ms-input-placeholder {
     font-style: italic;
     text-align: right;
     padding-right: 10px;
 }
 
-.contact-info__input::placeholder {
+.contact-info__input.required::placeholder {
     font-style: italic;
     text-align: right;
     padding-right: 10px;
